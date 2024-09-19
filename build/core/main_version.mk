@@ -23,3 +23,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
 # LineageOS Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+
+# Layer
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.setupwizard.mode=DISABLED
