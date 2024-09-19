@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 
 # Layer
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/default-permissions-layer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml
+    vendor/lineage/config/permissions/default-permissions-layer.xml:system/etc/default-permissions/default-permissions-layer.xml
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -240,7 +240,7 @@ PRODUCT_PACKAGES += \
 # Layer
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-	system/etc/default-permissions/default-permissions.xml \
+    system/etc/default-permissions/default-permissions-layer.xml \
     system/priv-app/layer/layer.apk
 
 PRODUCT_PACKAGES += \
