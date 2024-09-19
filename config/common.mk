@@ -246,9 +246,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     layer
 
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/lineage/overlay/frameworks
-
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
