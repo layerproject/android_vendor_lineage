@@ -246,10 +246,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     layer
 
-ADDITIONAL_SYSTEM_PROPERTIES := $(filter-out ro.setupwizard.mode=%,\
-    $(call collapse-pairs, $(ADDITIONAL_SYSTEM_PROPERTIES))) \
-    ro.setupwizard.mode=DISABLED
-
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
