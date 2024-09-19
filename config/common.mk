@@ -246,7 +246,8 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     layer
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ADDITIONAL_SYSTEM_PROPERTIES := $(filter-out ro.setupwizard.mode=%,\
+    $(call collapse-pairs, $(ADDITIONAL_SYSTEM_PROPERTIES))) \
     ro.setupwizard.mode=DISABLED
 
 # Translations
