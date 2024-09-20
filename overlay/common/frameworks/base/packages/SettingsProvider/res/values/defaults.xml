@@ -32,4 +32,5 @@
 
     <!-- Layer: Skip setup -->
     <bool name="def_user_setup_complete">true</bool>
+    <bool name="def_device_provisioned">true</bool>
 </resources>
