@@ -238,6 +238,8 @@ PRODUCT_PACKAGES += \
 
 # Layer
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/default-permissions/default-permissions-layer.xml \
     system/priv-app/layer/layer.apk
